@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Palanquin:wght@100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  margin: 20px;
+  font-family: Poppins;
+  background-color: #d1dedd;
+}
+
+ul, li {
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: #767f7e;
+}
+
+header {
+  max-width: 1200px;
+  margin: 40px auto;
+  border-bottom: 1px solid #abb0b0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+article img, article.featured img {
+  width: 100%;
+}
+
+article img {
+  border: 5px solid white;
+  border-radius: 8px;
+}
+article p, article h3 {
+  margin: 20px 10px;
+}
+@media screen and (max-width: 980px) {
+  article {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    align-items: center;
+  }
+}
+
+article.featured {
+  grid-column: span 3;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+p {
+  color: #828b8a;
+}
+
+/*# sourceMappingURL=styles.css.map */
