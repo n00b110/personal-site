@@ -48,12 +48,25 @@ article p, article h3 {
   }
 }
 
+@media screen and (max-width: 760px) {
+  article:not(.featured) {
+    display: block;
+    margin: 0 25px;
+  }
+}
+
 article.featured {
   grid-column: span 3;
   height: fit-content;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
+}
+@media screen and (max-width: 760px) {
+  article.featured {
+    display: block;
+    margin: 0 25px;
+  }
 }
 
 p {
